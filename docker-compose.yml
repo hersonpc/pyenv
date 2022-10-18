@@ -5,3 +5,8 @@ services:
     build:
       context: .
     platform: "linux/amd64"
+    ports:
+      - 8501:8501
+      - 8888:8888
+    volumes:
+      - ${PWD}:/app/
